@@ -1,0 +1,7 @@
+prototype(Carbon.Compression:Minify) < prototype(Neos.Fusion:Value) {
+	config = ${Configuration.setting('Carbon.Compression')}
+	regex = ${'/(?>[^\S ]\s*| \s{2,})' + this.config.regex + '/i'}
+	value = ${String.pregReplace(value, this.regex, this.config.replace)}
+	@position = 'end 999999999'
+	@if.isLive = ${node.context.live}
+}

@@ -1,0 +1,18 @@
+Neos:
+  Flow:
+    http:
+      chain:
+        postprocess:
+          chain:
+            compression:
+              position: 'before standardsCompliance'
+              component: 'Carbon\Compression\Flow\Http\Component\CompressionComponent'
+  Neos:
+    fusion:
+      autoInclude:
+        'Carbon.Compression': true
+
+Carbon:
+  Compression:
+    regex: '(?=[^<]*+(?:<(?!\/?(?:textarea|pre|script)\b)[^<]*+)*+(?:<(?>textarea|pre|script)\b|\z))'
+    replace: ' '

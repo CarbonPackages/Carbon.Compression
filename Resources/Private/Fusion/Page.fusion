@@ -1,0 +1,4 @@
+prototype(Page) {
+	head.@process.minify = Carbon.Compression:Minify
+	body.@process.minify = Carbon.Compression:Minify
+}
