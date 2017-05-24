@@ -1,4 +1,8 @@
 prototype(Page) {
-	head.@process.minify = Carbon.Compression:Minify
-	body.@process.minify = Carbon.Compression:Minify
+	head.@process.minify = Carbon.Compression:Minify {
+		@position = 'end 999999999'
+	}
+	body.@process.minify = Carbon.Compression:Minify {
+		@position = 'end 999999999'
+	}
 }
