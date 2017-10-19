@@ -1,5 +1,8 @@
 Carbon.Compression Package for Neos CMS
 =======================================
+[![Latest Stable Version](https://poser.pugx.org/carbon/compression/v/stable)](https://packagist.org/packages/carbon/compression)
+[![Total Downloads](https://poser.pugx.org/carbon/compression/downloads)](https://packagist.org/packages/carbon/compression)
+[![License](https://poser.pugx.org/carbon/compression/license)](LICENSE)
 
 This package enables gzip/deflate compression for the Neos output (borrowed from [c0necto/neos-compressor](https://github.com/c0necto/neos-compressor)). Additionally, the head and body section HTML of the `Neos.Neos:Page` prototype is being minified using pure regex. The regex can be adjusted in [Settings.yaml](Configuration/Settings.yaml). The difference between the minification from this package and `wyrihaximus/html-compress` is that this package inserts a blank space between the tags. This behavior prevents some browser bugs, especially Safari and SVG issues.
 
