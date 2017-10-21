@@ -1,8 +1,0 @@
-prototype(Page) {
-	head.@process.minify = Carbon.Compression:Minify {
-		@position = 'end 999999999'
-	}
-	body.@process.minify = Carbon.Compression:Minify {
-		@position = 'end 999999999'
-	}
-}
