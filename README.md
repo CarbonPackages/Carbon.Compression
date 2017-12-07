@@ -1,8 +1,14 @@
-Carbon.Compression Package for Neos CMS
-=======================================
 [![Latest Stable Version](https://poser.pugx.org/carbon/compression/v/stable)](https://packagist.org/packages/carbon/compression)
 [![Total Downloads](https://poser.pugx.org/carbon/compression/downloads)](https://packagist.org/packages/carbon/compression)
 [![License](https://poser.pugx.org/carbon/compression/license)](LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/jonnitto/Carbon.Compression.svg?style=social&label=Fork)](https://github.com/jonnitto/Carbon.Compression/fork)
+[![GitHub stars](https://img.shields.io/github/stars/jonnitto/Carbon.Compression.svg?style=social&label=Stars)](https://github.com/jonnitto/Carbon.Compression/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/jonnitto/Carbon.Compression.svg?style=social&label=Watch)](https://github.com/jonnitto/Carbon.Compression/subscription)
+[![GitHub followers](https://img.shields.io/github/followers/jonnitto.svg?style=social&label=Follow)](https://github.com/jonnitto/followers)
+[![Follow Jon on Twitter](https://img.shields.io/twitter/follow/jonnitto.svg?style=social&label=Follow)](https://twitter.com/jonnitto)
+
+Carbon.Compression Package for Neos CMS
+=======================================
 
 This package enables gzip/deflate compression for the Neos output (borrowed from [c0necto/neos-compressor](https://github.com/c0necto/neos-compressor)). Additionally, the head and body section HTML of the `Neos.Neos:Page` prototype is being minified using pure regex. The regex can be adjusted in [Settings.yaml](Configuration/Settings.yaml). The difference between the minification from this package and `wyrihaximus/html-compress` is that this package inserts a blank space between the tags. This behavior prevents some browser bugs, especially Safari and SVG issues.
 
