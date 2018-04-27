@@ -4,7 +4,7 @@
     "description": "Output compression and minification for Neos CMS",
     "license": "MIT",
     "require": {
-        "neos/neos": "~3.0 || dev-master"
+        "neos/neos": "~3.0 || ~4.0"
     },
     "autoload": {
         "psr-4": {

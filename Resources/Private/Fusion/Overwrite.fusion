@@ -1,4 +1,4 @@
-prototype(Page) {
+prototype(Neos.Neos:Page) {
     head.@process.minify = Carbon.Compression:Minify {
         @position = 'end 999999999'
     }
