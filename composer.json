@@ -1,26 +1,33 @@
 {
     "name": "carbon/compression",
-    "type": "neos-plugin",
+    "type": "neos-carbon",
     "description": "Output compression and minification for Neos CMS",
     "license": "MIT",
+    "keywords": ["flow", "neos", "fusion", "helper", "carbon"],
     "require": {
         "neos/neos": "~3.0 || ~4.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Carbon\\Compression\\": "Classes"
-        }
     },
     "authors": [
         {
             "name": "Jon Uhlmann",
             "email": "me@jonnitto.ch",
-            "homepage": "https://github.com/jonnitto",
+            "homepage": "https://jonnitto.ch",
             "role": "Developer"
         }
     ],
     "archive": {
-        "exclude": [".editorconfig", ".github", ".gitattributes", "CODE_OF_CONDUCT.md"]
+        "exclude": [
+            ".editorconfig",
+            ".gitattributes",
+            ".github",
+            ".gitignore",
+            "CODE_OF_CONDUCT.md"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Carbon\\Compression\\": "Classes"
+        }
     },
     "extra": {
         "marketplace-account": "me@jonnitto.ch",
