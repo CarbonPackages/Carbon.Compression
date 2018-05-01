@@ -28,7 +28,7 @@ As soon as the package is installed, the `Neos.Neos:Page` prototype is amended w
 To remove the default minification, simply override:
 
 ```elm
-prototype(Page) {
+prototype(Neos.Neos:Page) {
     head.@process.minify >
     body.@process.minify >
 }
