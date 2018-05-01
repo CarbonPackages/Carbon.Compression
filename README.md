@@ -27,7 +27,7 @@ As soon as the package is installed, the `Neos.Neos:Page` prototype is amended w
 
 To remove the default minification, simply override:
 
-```js
+```elm
 prototype(Page) {
     head.@process.minify >
     body.@process.minify >
@@ -36,7 +36,7 @@ prototype(Page) {
 
 To compress specific parts, use the minification prototype like this:
 
-```js
+```elm
 something.@process.minify = Carbon.Compression:Minify
 ```
 
