@@ -1,12 +1,4 @@
 Neos:
-  Flow:
-    http:
-      chain:
-        postprocess:
-          chain:
-            compression:
-              position: 'before standardsCompliance'
-              component: 'Carbon\Compression\Flow\Http\Component\CompressionComponent'
   Neos:
     fusion:
       autoInclude:
