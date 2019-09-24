@@ -40,6 +40,3 @@ To compress specific parts, use the minification prototype like this:
 something.@process.minify = Carbon.Compression:Minify
 ```
 
-## License
-
-Licensed under MIT, see [LICENSE](LICENSE)
