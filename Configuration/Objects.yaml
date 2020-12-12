@@ -1,0 +1,3 @@
+'Carbon:Compression':
+  className: 'Middlewares\Minifier'
+  factoryMethodName: 'Middlewares\Minifier::html'

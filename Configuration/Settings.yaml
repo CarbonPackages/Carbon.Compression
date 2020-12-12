@@ -1,10 +1,7 @@
 Neos:
-  Neos:
-    fusion:
-      autoInclude:
-        'Carbon.Compression': true
-
-Carbon:
-  Compression:
-    regex: '(?=[^<]*+(?:<(?!\/?(?:textarea|pre|script)\b)[^<]*+)*+(?:<(?>textarea|pre|script)\b|\z))'
-    replace: ' '
+  Flow:
+    http:
+      middlewares:
+        minifyHtml:
+          middleware: Carbon:Compression
+          position: start
