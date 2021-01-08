@@ -5,3 +5,7 @@ Neos:
         minifyHtml:
           middleware: Carbon:Compression
           position: start
+  Neos:
+    fusion:
+      autoInclude:
+        "Carbon.Compression": true
