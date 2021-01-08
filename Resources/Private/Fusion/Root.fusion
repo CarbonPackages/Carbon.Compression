@@ -1,1 +1,7 @@
-include: **/*.fusion
+prototype(Neos.Neos:Page) {
+    httpResponseHead {
+        headers {
+            'Content-Type' = 'text/html'
+        }
+    }
+}
