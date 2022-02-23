@@ -1,3 +1,7 @@
+error {
+    @process.compress = ${Carbon.Compression.compress(value)}
+}
+
 prototype(Neos.Neos:Page) {
     httpResponseHead {
         headers {
