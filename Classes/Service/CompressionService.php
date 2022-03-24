@@ -5,7 +5,7 @@ namespace Carbon\Compression\Service;
 use Neos\Flow\Annotations as Flow;
 use Psr\Http\Message\ResponseInterface;
 use WyriHaximus\HtmlCompress\Factory as HtmlCompress;
-use function GuzzleHttp\Psr7\stream_for;
+use GuzzleHttp\Psr7\Utils;
 
 class CompressionService
 {
@@ -25,7 +25,7 @@ class CompressionService
     {
         $html = $response->getBody()->getContents();
         $html = HtmlCompress::construct()->compress($html);
-        $response = $response->withBody(stream_for($html));
+        $response = $response->withBody(Utils::streamFor($html));
 
         if (!$this->debugMode) {
             $response = $response->withoutHeader('X-Compression');
