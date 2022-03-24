@@ -3,8 +3,8 @@ Neos:
     http:
       middlewares:
         minifyHtml:
-          middleware: Carbon:Compression
-          position: start
+          middleware: Carbon\Compression\Middleware\CompressionMiddleware
+          position: before dispatch
   Fusion:
     defaultContext:
       Carbon.Compression: Carbon\Compression\EelHelper\CompressionHelper
@@ -12,3 +12,7 @@ Neos:
     fusion:
       autoInclude:
         "Carbon.Compression": true
+
+Carbon:
+  Compression:
+    debugMode: false

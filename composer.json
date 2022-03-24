@@ -10,8 +10,7 @@
     ],
     "require": {
         "neos/flow": "^7.0",
-        "middlewares/minifier": "^2.0",
-        "slim/psr7": "^1.3"
+        "wyrihaximus/html-compress": "^3.0 || ^4.0"
     },
     "authors": [
         {

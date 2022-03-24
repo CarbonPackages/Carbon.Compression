@@ -1,11 +1,10 @@
 error {
-    @process.compress = ${Carbon.Compression.compress(value)}
+    @process.compress = ${node.context.inBackend ? value : Carbon.Compression.compress(value)}
 }
 
 prototype(Neos.Neos:Page) {
-    httpResponseHead {
-        headers {
-            'Content-Type' = 'text/html'
-        }
+    httpResponseHead.headers {
+        Content-Type = 'text/html'
+        X-Compression = ${node.context.inBackend ? null : 'enabled'}
     }
 }

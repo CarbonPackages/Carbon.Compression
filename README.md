@@ -7,7 +7,7 @@
 
 # Carbon.Compression Package for Flow & Neos CMS
 
-This package minify the HTML output of Flow using [middlewares/minifier](https://github.com/middlewares/minifier).  
+This package minifies the HTML output of Flow using [wyrihaximus/html-compress](https://github.com/WyriHaximus/HtmlCompress).  
 **If you set your templates with AFX, you might not need this package.**
 
 ## Installation
@@ -15,6 +15,10 @@ This package minify the HTML output of Flow using [middlewares/minifier](https:/
 ```bash
 composer require carbon/compression
 ```
+
+## Inner working
+
+The compression http middleware will modify all responses with active `X-Compression: Enabled` http header. This header is added to `Neos.Neos:Page` already so this will work for Neos right away. For other controllers, you will have to add the `X-Compression: Enabled` manually.
 
 ## Usage below Neos 7
 If you want to use HTML compression on older versions of Neos, you can use an older version of this package:

@@ -2,9 +2,9 @@
 
 namespace Carbon\Compression\EelHelper;
 
-use WyriHaximus\HtmlCompress\Factory as HtmlCompress;
 use Neos\Eel\ProtectedContextAwareInterface;
 use Neos\Flow\Annotations as Flow;
+use WyriHaximus\HtmlCompress\Factory as HtmlCompress;
 
 /**
  * @Flow\Proxy(false)
