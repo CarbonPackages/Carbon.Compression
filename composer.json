@@ -38,7 +38,12 @@
         "marketplace-account": "me@jonnitto.ch",
         "installer-name": "Carbon.Compression",
         "neos": {
-            "package-key": "Carbon.Compression"
+            "package-key": "Carbon.Compression",
+            "loading-order": {
+                "after": [
+                    "neos/neos"
+                ]
+            }
         }
     }
 }
