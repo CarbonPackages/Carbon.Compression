@@ -25,6 +25,9 @@ class CompressionService
     {
         $html = $response->getBody()->getContents();
         $html = HtmlCompress::construct()->compress($html);
+        if (stripos($html, "</head><body") === false) {
+            $html = str_replace("<body", "</head><body", $html);
+        }
         $response = $response->withBody(Utils::streamFor($html));
 
         if (!$this->debugMode) {
