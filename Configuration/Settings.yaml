@@ -11,7 +11,7 @@ Neos:
   Neos:
     fusion:
       autoInclude:
-        Carbon.Compression: true
+        'Carbon.Compression': true
 Carbon:
   Compression:
     debugMode: false
