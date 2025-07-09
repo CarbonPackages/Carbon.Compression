@@ -19,5 +19,5 @@ indent_size = 2
 [Sites.xml]
 indent_size = 1
 
-[*.{note,md,edit,read}]
+[*.md]
 trim_trailing-whitespace = false
